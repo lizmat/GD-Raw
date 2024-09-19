@@ -18,7 +18,9 @@
   "resources": [
   ],
   "source-url": "https://github.com/raku-community-modules/GD-Raw.git",
-  "tags": [ "GD", "IMAGE"
+  "tags": [
+    "GD",
+    "IMAGE"
   ],
   "test-depends": [
   ],
