@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/raku-community-modules/GD-Raw/actions/workflows/linux.yml/badge.svg)](https://github.com/raku-community-modules/GD-Raw/actions)
+[![Actions Status](https://github.com/raku-community-modules/GD-Raw/actions/workflows/linux.yml/badge.svg)](https://github.com/raku-community-modules/GD-Raw/actions) [![Actions Status](https://github.com/raku-community-modules/GD-Raw/actions/workflows/macos.yml/badge.svg)](https://github.com/raku-community-modules/GD-Raw/actions)
 
 NAME
 ====
