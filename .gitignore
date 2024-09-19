@@ -1,3 +1,2 @@
-# vim swp files
-*.swp
-.precomp
+.precomp/
+/GD-Raw-*

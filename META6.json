@@ -1,13 +1,26 @@
 {
-    "perl"        : "6.*",
-    "name"        : "GD::Raw",
-    "license"     : "Artistic-2.0",
-    "version"     : "0.2",
-    "description" : "Low level language bindings to GD Graphics Library",
-    "provides"    : {
-        "GD::Raw" : "lib/GD/Raw.pm"
-    },
-    "author"      : "Dagur Valberg Johannsson",
-    "depends"     : [ ],
-    "source-url"  : "git://github.com/dagurval/perl6-gd-raw.git"
+  "auth": "zef:raku-community-modules",
+  "authors": [
+    "Dagur Valberg Johannsson",
+    "Raku Community"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Low level language bindings to GD Graphics Library",
+  "license": "Artistic-2.0",
+  "name": "GD::Raw",
+  "perl": "6.*",
+  "provides": {
+    "GD::Raw": "lib/GD/Raw.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/raku-community-modules/GD-Raw.git",
+  "tags": [ "GD", "IMAGE"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.3"
 }

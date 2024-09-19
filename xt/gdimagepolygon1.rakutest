@@ -1,0 +1,29 @@
+use Test;
+use GD::Raw;
+
+use lib $*PROGRAM.parent;
+use gdtest;
+
+plan 1;
+
+my $im = gdImageCreate(100, 100) or die;
+LEAVE gdImageDestroy($im) if $im;
+
+my $white = gdImageColorAllocate($im, 0xff, 0xff, 0xff);
+my $black = gdImageColorAllocate($im, 0, 0, 0);
+
+gdImageFilledRectangle($im, 0, 0, 99, 99, $white);
+
+my @points;
+@points[0]   = gdPointPtr.new;
+@points[0].x = 10;
+@points[0].y = 10;
+
+gdImagePolygon($im, @points, 1, $black);
+
+ok gdAssertImageEqualsToFile
+  $*PROGRAM.sibling("ported-gdimagepolygon/gdimagepolygon1.png"),
+  $im
+;
+
+# vim: expandtab shiftwidth=4

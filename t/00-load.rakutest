@@ -1,0 +1,8 @@
+use Test;
+use GD::Raw;
+
+plan 1;
+
+ok 1, "GD::Raw loaded";
+
+# vim: expandtab shiftwidth=4

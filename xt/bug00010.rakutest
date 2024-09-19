@@ -1,0 +1,17 @@
+use Test;
+use GD::Raw;
+
+use lib $*PROGRAM.parent;
+use gdtest;
+
+plan 1;
+
+my $im = gdImageCreateTrueColor(100,100) or die;
+LEAVE gdImageDestroy($im) if $im;
+
+gdImageFilledEllipse($im, 50,50, 70, 90, 0x50FFFFFF);
+
+my $path = $*PROGRAM.sibling("ported-gdimagefilledellipse/bug00010_exp.png");
+ok gdAssertImageEqualsToFile $path, $im;
+
+# vim: expandtab shiftwidth=4
