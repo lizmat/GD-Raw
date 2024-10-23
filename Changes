@@ -2,5 +2,8 @@ Revision history for GD::Raw
 
 {{$NEXT}}
 
+0.4  2024-10-23T11:02:05+02:00
+    - Add some in-place filters: 0racle++
+
 0.3  2024-09-19T14:56:55+02:00
     - Initial version in the zef ecosystem

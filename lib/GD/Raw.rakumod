@@ -262,7 +262,7 @@ sub gdImageNegate(gdImagePtr $src)
     returns int32
     is native(LIB) is export {*}
 
-sub gdImageSetThickness(gdImagePtr $im, int32 $thickness
+sub gdImageSetThickness(gdImagePtr $im, int32 $thickness)
     #returns void
     is native(LIB) is export {*}
 
