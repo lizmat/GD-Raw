@@ -214,7 +214,55 @@ sub gdImagePixelate(gdImagePtr $im, int32 $block_size, uint32 $mode)
     returns int32
     is native(LIB) is export {*}
 
-sub gdImageSetThickness(gdImagePtr $im, int32 $thickness)
+sub gdImageScatter(gdImagePtr $im, int32 $sub, int32 $plus)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageSmooth(gdImagePtr $im, num32 $weight)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageMeanRemoval(gdImagePtr $im)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageEmboss(gdImagePtr $im)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageGaussianBlur(gdImagePtr $im)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageEdgeDetectQuick(gdImagePtr $src)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageSelectiveBlur(gdImagePtr $src)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageColor(gdImagePtr $src, int32 $red, int32 $green, int32 $blue, int32 $alpha)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageContrast(gdImagePtr $src, num64 $contrast)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageBrightness(gdImagePtr $src, int32 $brightness)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageGrayScale(gdImagePtr $src)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageNegate(gdImagePtr $src)
+    returns int32
+    is native(LIB) is export {*}
+
+sub gdImageSetThickness(gdImagePtr $im, int32 $thickness
     #returns void
     is native(LIB) is export {*}
 
